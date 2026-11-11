@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Switchboard status (backup)</title>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--muted:#666;--ok:#1b7f3b;--down:#b42318;--line:#e5e5e5}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--fg:#eee;--muted:#aaa;--ok:#5fd38a;--down:#ff8a80;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,sans-serif}
+main{max-width:680px;margin:0 auto;padding:24px 16px}
+table{width:100%;border-collapse:collapse}td{padding:10px 0;border-bottom:1px solid var(--line)}
+td+td{text-align:right}.ok{color:var(--ok)}.down{color:var(--down)}.unknown,.muted{color:var(--muted)}
+.inc{border-top:1px solid var(--line);padding-top:8px}.inc h3 span{font-weight:400;color:var(--muted);font-size:14px}
+</style></head><body><main>
+<h1>Switchboard status</h1>
+<p class="muted">This is the backup status page, hosted outside Cloudflare so it stays up when the
+<a href="https://switchboard-status.craig-afe.workers.dev">main status page</a> can't. Texts sent to an offline hub aren't lost: they arrive when it's back.</p>
+<table><tr><td>Texting</td><td class='unknown'>Not checked yet</td></tr><tr><td>Dashboard &amp; sign-in</td><td class='ok'>Working</td></tr><tr><td>Main status page</td><td class='ok'>Working</td></tr></table>
+<p class="muted">Checked every 5 minutes from Logic Wizards' operations server. Last change: Nov 11, 1:16 PM ET.</p>
+<h2>Incidents</h2><p class='muted'>No incidents in the last 14 days.</p>
+<p class="muted">Logic Wizards LLC · support@logicwizards.dev</p>
+</main></body></html>
