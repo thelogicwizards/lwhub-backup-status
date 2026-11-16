@@ -1,7 +1,7 @@
 {
  "texting": "none",
- "dashboard": true,
+ "dashboard": false,
  "main_status_page": true,
  "incidents": [],
- "changed": 1794787742916
+ "changed": 1794788057632
 }
